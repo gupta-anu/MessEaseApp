@@ -31,8 +31,7 @@ Committee members can update the menu and notify the admin.
 
 ### **6. Polls and Announcements**
 Create polls, send announcements, and share images within the app.  
-<img src="https://github.com/user-attachments/assets/bdb54af2-f88a-4db5-886d-3cc388e4938f" width="300" height="600"/>  
-<img src="https://github.com/user-attachments/assets/75514b40-bcbf-473b-9972-a358631d537c" width="300" height="600"/>
+<img src="https://github.com/user-attachments/assets/bdb54af2-f88a-4db5-886d-3cc388e4938f" width="300" height="600"/>
 
 ### **7. Flexible Announcement Timings**
 Adjust announcement timings as needed.  
