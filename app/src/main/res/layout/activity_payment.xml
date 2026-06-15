@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".ui.more.payment.PaymentActivity">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/food"
+        app:layout_constraintBottom_toTopOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/food"
+        android:paddingBottom="5dp"
+        android:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar"
+        app:titleEnabled="true"
+        app:titleTextColor="@color/white" >
+        <ImageButton
+            android:id="@+id/history_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/history_svgrepo_com"
+            android:contentDescription="History"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="end|center_vertical"
+            app:tint="@android:color/white"
+            android:layout_marginEnd="15dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Enter Amount in Rupees"
+        app:startIconDrawable="@drawable/baseline_currency_rupee_24"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:layout_editor_absoluteX="25dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAmount"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:hint="Enter Purpose"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
+        tools:layout_editor_absoluteX="25dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPurpose"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@id/btnPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/payment_animation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="35dp"
+        android:enabled="false"
+        android:text="Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

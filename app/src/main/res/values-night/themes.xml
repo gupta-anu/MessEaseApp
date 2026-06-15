@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Messease" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/food</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/food</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Messease.AppBarOverlay" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="Theme.Messease.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
